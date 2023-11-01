@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      timezone: "Europe/London"
+      time: "09:00"
+      day: "monday"
+    labels:
+      - "actions-update"
+      - "bot"
+    commit-message:
+      prefix: "ci:"
